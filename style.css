@@ -17,13 +17,14 @@
 }
 
 .header {
-  background-image: url("header-bg.8ec50a9a.png");
+  background-image: url("./images/header-bg.bced6dda.png");
   background-position: 80%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
 }
+
 
 @media (width >= 600px) {
   .header {
@@ -72,7 +73,7 @@
 .top-bar__logo {
   width: 130px;
   height: 38px;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 @media (width >= 600px) {
@@ -100,8 +101,8 @@
 }
 
 .icon--phone {
-  background-image: url("icon-phone.217bf46b.png");
-  transition: transform .3s;
+  background-image: url("images/icon-phone.217bf46b.png");
+  transition: transform 0.3s;
   position: relative;
 }
 
@@ -122,16 +123,16 @@
 }
 
 .icon--menu {
-  background-image: url("icon-burger-menu.95976320.png");
+  background-image: url("images/icon-burger-menu.95976320.png");
 }
 
 .icon--menu:hover {
-  background-image: url("icon-burger-menu-hover.85d55bb4.png");
+  background-image: url("images/icon-burger-menu-hover.85d55bb4.png");
   transform: scale(1.2);
 }
 
 .icon--close {
-  background-image: url("icon-burger-menu-close.8aac800a.png");
+  background-image: url("images/icon-burger-menu-close.8aac800a.png");
 }
 
 .menu {
@@ -211,7 +212,7 @@
   background-color: #292929;
   width: 100%;
   height: 1px;
-  transition: transform .3s;
+  transition: transform 0.3s;
   display: block;
   position: absolute;
   bottom: -8px;
@@ -244,7 +245,7 @@
 .page__menu {
   opacity: 0;
   pointer-events: none;
-  transition: all .3s;
+  transition: all 0.3s;
   position: fixed;
   top: 0;
   left: 0;
@@ -378,7 +379,7 @@
   grid-column: 1 / -1;
   font-size: 24px;
   font-weight: 700;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 @media (width >= 600px) {
@@ -408,7 +409,7 @@
 }
 
 .footer {
-  background-image: url("footer-bg.6bd054ae.png");
+  background-image: url("images/footer-bg.6bd054ae.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -483,7 +484,7 @@
   border-radius: 40px;
   width: 100%;
   height: 56px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .contacts__button a {
@@ -574,15 +575,21 @@
   margin-bottom: 24px;
 }
 
-.contacts__email--info, .contacts__adress--info, .contacts__phone--info {
-  transition: all .3s;
+.contacts__email--info,
+.contacts__adress--info,
+.contacts__phone--info {
+  transition: all 0.3s;
 }
 
-.contacts__email--info:hover, .contacts__adress--info:hover, .contacts__phone--info:hover {
+.contacts__email--info:hover,
+.contacts__adress--info:hover,
+.contacts__phone--info:hover {
   color: #5b5b5b;
 }
 
-.contacts__email--info a, .contacts__adress--info a, .contacts__phone--info a {
+.contacts__email--info a,
+.contacts__adress--info a,
+.contacts__phone--info a {
   cursor: pointer;
   color: inherit;
   text-decoration: none;
@@ -666,7 +673,7 @@
 }
 
 .detail__link {
-  transition: transform .3s;
+  transition: transform 0.3s;
   position: relative;
 }
 
@@ -752,4 +759,3 @@
 .section-title--semi-bold {
   font-weight: 600;
 }
-/*# sourceMappingURL=index.971c2ea4.css.map */
