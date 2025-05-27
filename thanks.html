@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Poppins, sans-serif;
+        background-color: #1d1d1d;
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+      .thank-you-box {
+        background-color: #2a2a2a;
+        padding: 40px;
+        border-radius: 16px;
+        display: inline-block;
+        max-width: 500px;
+      }
+      .thank-you-box h1 {
+        color: #f9c74f;
+        margin-bottom: 20px;
+      }
+      .thank-you-box p {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      a.button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #f9c74f;
+        color: #000;
+        text-decoration: none;
+        border-radius: 32px;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      a.button:hover {
+        background-color: #ffd84d;
+      }
+    </style>
+    <title>Dziękujemy!</title>
+  </head>
+  <body>
+    <div class="thank-you-box">
+      <h1>Dziękujemy za kontakt!</h1>
+      <p><strong>Imię:</strong> <span id="name"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Wiadomość:</strong></p>
+      <p id="message"></p>
+      <a href="index.html" class="button">Wróć na stronę główną</a>
+    </div>
+
+    <script>
+      const data = JSON.parse(sessionStorage.getItem("contactData"));
+      if (data) {
+        document.getElementById("name").textContent = data.name;
+        document.getElementById("email").textContent = data.email;
+        document.getElementById("message").textContent = data.message;
+      } else {
+        document.querySelector(".thank-you-box").innerHTML =
+          "<h1>Brak danych 😢</h1><a href='index.html' class='button'>Spróbuj ponownie</a>";
+      }
+    </script>
+  </body>
+</html>

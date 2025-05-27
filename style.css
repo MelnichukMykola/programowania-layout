@@ -25,7 +25,6 @@
   position: relative;
 }
 
-
 @media (width >= 600px) {
   .header {
     background-position: center;
